@@ -9,3 +9,6 @@
   font-family: 'Quicksand', Cambria, Cochin, Georgia, Times, 'Times New Roman',
     serif;
 }
+body {
+  transition: background-color 1s ease, color 1s ease;
+}
