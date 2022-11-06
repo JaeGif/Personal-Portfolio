@@ -5,3 +5,70 @@
   min-height: 100vh;
   width: 100vw;
 }
+.contact-inner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.form-wrapper {
+  width: 100vw;
+  height: 50vh;
+}
+.label-input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 400px;
+}
+.send-email {
+  background: none;
+  color: black;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+input {
+  width: 300px;
+  height: 1.5rem;
+}
+textarea {
+  width: 300px;
+  height: 10.5rem;
+  resize: vertical;
+  min-height: 2rem;
+  max-height: 20rem;
+}
+label {
+  font-size: 1.5rem;
+}
+.in-touch-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact-outer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: space-evenly;
+}
+.hidden {
+  display: none;
+}
+.larger-text {
+  font-size: 4rem;
+}
+.large-text {
+  font-size: 2.5rem;
+}
+.contact-slide {
+  cursor: pointer;
+}
+.chevron {
+  height: 15rem;
+  transition: transform 1s ease;
+}
+.contact-slide:hover .chevron {
+  transform: translateX(50px);
+}
