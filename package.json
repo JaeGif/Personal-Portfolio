@@ -1,0 +1,23 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaeGif/Personal-Portfolio.git"
+  },
+  "author": "Jae",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JaeGif/Personal-Portfolio/issues"
+  },
+  "homepage": "https://github.com/JaeGif/Personal-Portfolio#readme",
+  "devDependencies": {
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
