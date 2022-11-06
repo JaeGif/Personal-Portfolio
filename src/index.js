@@ -37,7 +37,11 @@ function isProjectInViewport(el) {
   let bottomBound = rect.bottom - window.innerHeight;
   console.log(bottomBound);
 
-  return rect.top <= window.innerHeight / 2 && rect.bottom >= bottomBound;
+  return (
+    rect.top <= window.innerHeight / 2 &&
+    rect.bottom >= bottomBound &&
+    bottomBound >= -550
+  );
 }
 function projectSectionFocused() {
   const body = document.body;
