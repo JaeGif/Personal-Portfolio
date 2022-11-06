@@ -24,6 +24,7 @@
 .positional-wrapper {
   width: 1130px;
 }
+
 .project-card {
   position: relative;
   display: flex;
@@ -41,12 +42,11 @@
   position: absolute;
   z-index: 3;
   bottom: -100px;
-  box-shadow: rgb(10, 10, 10) 5px 5px 10px;
+  box-shadow: rgb(20, 20, 20) -5px 5px 10px;
   left: 95%;
   align-items: flex-start;
   width: 550px;
   height: 350px;
-  border: 2px solid black;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -57,6 +57,14 @@
   padding: 15px;
   color: black;
   transition: background-color 1s ease;
+}
+.reverse {
+  left: -95%;
+  display: flex;
+  justify-content: flex-end;
+}
+.description-card.reverse {
+  box-shadow: rgb(20, 20, 20) 5px 5px 10px;
 }
 .description-in-focus {
   background-color: rgb(238, 238, 238);

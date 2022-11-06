@@ -13,6 +13,7 @@ function projectParallax() {
     let scrollY = window.scrollY;
     const windowHeight = window.innerHeight;
     projectSectionFocused();
+    console.log(projectCard);
     for (let i = 0; i < projectCard.length; i++) {
       if (isElementInViewport(projectCard[i])) {
         const initialDescriptionCardPosition = -200 - windowHeight * 0.2 * i;
