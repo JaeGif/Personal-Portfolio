@@ -76,7 +76,7 @@
   font-size: 24px;
 }
 .project-asset {
-  height: 100%;
+  width: 100%;
   filter: brightness(75%);
   transition: filter 0.3s ease-in;
 }
@@ -141,4 +141,7 @@ button > img {
 }
 #shopping-cart-accent {
   background-color: rgb(255, 103, 128);
+}
+#weather-accent {
+  background-color: rgb(80, 80, 80);
 }

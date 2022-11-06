@@ -17,7 +17,7 @@ function projectParallax() {
     for (let i = 0; i < projectCard.length; i++) {
       if (isElementInViewport(projectCard[i])) {
         const initialDescriptionCardPosition = -200 - windowHeight * 0.2 * i;
-        const initialUnderImageAccentPosition = -30 - i * 30;
+        const initialUnderImageAccentPosition = -30 - i * 25;
         underImageAccent[i].style.top =
           initialUnderImageAccentPosition + scrollY * accentVelocity + 'px';
         descriptionCard[i].style.bottom =
