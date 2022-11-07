@@ -14,8 +14,32 @@ nav > a {
   cursor: pointer;
   text-decoration: none;
   font-size: 32px;
-  margin: 5vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
+
 a:link {
   text-decoration: none;
+}
+
+.nav-top {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 25;
+  background-color: white;
+  width: 100%;
+  padding: 10px;
+  border-bottom: solid white;
+  color: black;
+  transition: background-color 1s ease;
+}
+.stuckTop {
+  position: fixed;
+  box-shadow: rgb(24, 24, 24) 1px 20px 50px;
+  transition: box-shadow 1s ease;
+}
+.uncolorNav {
+  box-shadow: none;
 }

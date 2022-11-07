@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  width: 100vw;
+  min-width: 100vw;
 }
 .contact-inner-container {
   display: flex;
@@ -13,8 +13,13 @@
   gap: 10px;
 }
 .form-wrapper {
-  width: 100vw;
-  height: 50vh;
+  min-width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 1s ease-in-out;
+  color: black;
 }
 .label-input-wrapper {
   display: flex;
@@ -27,7 +32,7 @@
   color: black;
   border: none;
   font-size: 2rem;
-  cursor: pointer;
+  transition: transform 0.25s ease;
 }
 input {
   width: 300px;
@@ -47,14 +52,23 @@ label {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  transition: transform 0.5s ease;
 }
 .contact-outer-wrapper {
   display: flex;
   justify-content: center;
   align-items: space-evenly;
+  transition: transform 1s ease-in-out;
+  min-width: 100vw;
 }
 .hidden {
-  display: none;
+  transform: translateX(150vw);
+}
+.show {
+  transform: translateX(-50vw);
+}
+.showSlide {
+  transform: translateX(55vw);
 }
 .larger-text {
   font-size: 4rem;
@@ -70,5 +84,24 @@ label {
   transition: transform 1s ease;
 }
 .contact-slide:hover .chevron {
+  transform: translateX(50px);
+}
+.contact-slide:hover .in-touch-wrapper {
+  transform: scale(103%);
+}
+.send-email:hover {
+  transform: scale(108%);
+}
+.justify-center-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.mail {
+  transition: transform 1s ease;
+}
+.justify-center-div:hover .mail {
   transform: translateX(50px);
 }

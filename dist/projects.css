@@ -98,7 +98,6 @@
 .under-image-outline {
   width: 575px;
   height: 375px;
-  border-radius: 3px;
   position: absolute;
   left: 20px;
   z-index: -1;

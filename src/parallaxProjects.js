@@ -5,7 +5,7 @@ function projectParallax() {
     'under-image-outline'
   );
   const descriptionCardVelocity = 0.25;
-  const accentVelocity = 0.037;
+  const accentVelocity = 0.05;
   const projectEntireArea =
     document.getElementsByClassName('heading-section')[0];
 
@@ -16,7 +16,7 @@ function projectParallax() {
     for (let i = 0; i < projectCard.length; i++) {
       if (isElementInViewport(projectCard[i])) {
         const initialDescriptionCardPosition = -200 - windowHeight * 0.2 * i;
-        const initialUnderImageAccentPosition = -30 - i * 25;
+        const initialUnderImageAccentPosition = -50 - i * 25;
         underImageAccent[i].style.top =
           initialUnderImageAccentPosition + scrollY * accentVelocity + 'px';
         descriptionCard[i].style.bottom =
@@ -44,6 +44,7 @@ function isProjectInViewport(el) {
 function projectSectionFocused() {
   const body = document.body;
   const descriptionCard = document.getElementsByClassName('description-card');
+  const navBar = document.getElementById('nav-container');
 
   const projectEntireArea =
     document.getElementsByClassName('heading-section')[0];
@@ -52,8 +53,10 @@ function projectSectionFocused() {
       descriptionCard[i].classList.add('description-in-focus');
     }
     body.classList.add('in-focus');
+    navBar.classList.remove('uncolorNav');
   } else {
     body.classList.remove('in-focus');
+    navBar.classList.add('uncolorNav');
   }
 }
 
