@@ -33,12 +33,12 @@ a:link {
   padding: 10px;
   border-bottom: solid white;
   color: black;
-  transition: background-color 1s ease;
+  transition: background-color 0.5s ease;
 }
 .stuckTop {
   position: fixed;
   box-shadow: rgb(24, 24, 24) 1px 20px 50px;
-  transition: box-shadow 1s ease;
+  transition: box-shadow 0.5s ease;
 }
 .uncolorNav {
   box-shadow: none;

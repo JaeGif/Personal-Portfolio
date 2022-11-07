@@ -100,8 +100,8 @@ label {
   cursor: pointer;
 }
 .mail {
-  transition: transform 1s ease;
+  transition: transform 1s ease-in-out;
 }
 .justify-center-div:hover .mail {
-  transform: translateX(50px);
+  transform: translateX(75px);
 }
