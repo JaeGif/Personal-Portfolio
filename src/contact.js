@@ -6,7 +6,6 @@ function contactSlide() {
 }
 
 function transformPageLeft() {
-  console.log('clicked');
   const contactCallToAction = document.getElementsByClassName(
     'contact-outer-wrapper'
   )[0];

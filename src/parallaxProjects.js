@@ -54,10 +54,21 @@ function projectSectionFocused() {
     }
     body.classList.add('in-focus');
     navBar.classList.remove('uncolorNav');
+    transformContactSectionBack();
   } else {
     body.classList.remove('in-focus');
     navBar.classList.add('uncolorNav');
   }
 }
+function transformContactSectionBack() {
+  const contactCallToAction = document.getElementsByClassName(
+    'contact-outer-wrapper'
+  )[0];
+  const contactForm = document.getElementsByClassName('form-wrapper')[0];
 
+  contactCallToAction.classList.add('showSlide');
+  contactCallToAction.classList.remove('hidden');
+  contactForm.classList.add('hidden');
+  contactForm.classList.remove('show');
+}
 export default projectParallax;
