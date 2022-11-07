@@ -9,5 +9,31 @@ function stickNav() {
     }
   });
 }
+function navPageScroll() {
+  const projectBtn = document.getElementById('project-nav');
+  const contactBtn = document.getElementById('contact-nav');
+  const resumeBtn = document.getElementById('resume-nav');
 
-export default stickNav;
+  projectBtn.addEventListener('click', () => {
+    const projectTitleHeight = 36;
+    window.scroll({
+      top: window.innerHeight + projectTitleHeight,
+      behavior: 'smooth',
+    });
+  });
+  contactBtn.addEventListener('click', () => {
+    scrollAndShift();
+  });
+  resumeBtn.addEventListener('click', () => {
+    console.log('resume download');
+  });
+}
+
+function scrollAndShift() {
+  window.scroll({
+    top: document.body.scrollHeight,
+    behavior: 'smooth',
+  });
+}
+
+export { stickNav, navPageScroll };

@@ -17,4 +17,4 @@ function transformPageLeft() {
   contactForm.classList.remove('hidden');
 }
 
-export default contactSlide;
+export { contactSlide, transformPageLeft };
