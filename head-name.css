@@ -1,3 +1,7 @@
+:root {
+  --infinite-fill: 0%;
+}
+
 .name-section {
   display: flex;
   justify-content: center;
@@ -42,4 +46,22 @@ a:link {
 }
 .uncolorNav {
   box-shadow: none;
+}
+#progress-bar {
+  position: fixed;
+  bottom: 0px;
+  left: -10px;
+  z-index: 50;
+  height: 200px;
+}
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear forwards;
+}
+
+@keyframes dash {
+  --infinite-fill {
+    stroke-dashoffset: 0;
+  }
 }
