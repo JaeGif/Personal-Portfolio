@@ -18,11 +18,13 @@
         <h1 class="name-h1">Jae Gifford</h1>
         <h1 class="name-h1">Full Stack Developer</h1>
       </div>
-      <nav>
-        <a>Projects</a>
-        <a>About</a>
-        <a>Resume</a>
-      </nav>
+      <div id="nav-container" class="nav-top">
+        <nav>
+          <a class="nav-item">Projects</a>
+          <a class="nav-item">About</a>
+          <a class="nav-item">Resume</a>
+        </nav>
+      </div>
     </section>
     <section class="heading-section">
       <h1>Projects</h1>
@@ -184,7 +186,7 @@
     <section class="contact-section">
       <!--         action="https://formsubmit.co/88a570e5b09812d65851f42042cdbe95" method="POST"
  -->
-      <div class="contact-outer-wrapper contact-slide">
+      <div class="contact-outer-wrapper contact-slide showSlide">
         <div class="in-touch-wrapper">
           <h1 class="larger-text">Let's get in touch</h1>
           <h2 id="email" class="large-text">jae.giffor@gmail.com</h2>
@@ -195,19 +197,24 @@
       <div class="form-wrapper hidden">
         <form>
           <div class="contact-inner-container">
-            <div class="label-input-wrapper">
-              <label for="name">Name</label>
-              <input name="name" type="text" placeholder="Name" />
+            <div class="contact-inner-container">
+              <div class="label-input-wrapper">
+                <label for="name">Name</label>
+                <input name="name" type="text" placeholder="Name" />
+              </div>
+              <div class="label-input-wrapper">
+                <label for="email">Email</label>
+                <input name="email" type="email" placeholder="Email" />
+              </div>
+              <div class="label-input-wrapper">
+                <label for="message">Message</label>
+                <textarea name="message" placeholder="Message"></textarea>
+              </div>
+              <div class="justify-center-div">
+                <button class="send-email" type="submit">Send</button>
+                <img class="mail" src="./icons/send.svg" />
+              </div>
             </div>
-            <div class="label-input-wrapper">
-              <label for="email">Email</label>
-              <input name="email" type="email" placeholder="Email" />
-            </div>
-            <div class="label-input-wrapper">
-              <label for="message">Message</label>
-              <textarea name="message" placeholder="Message"></textarea>
-            </div>
-            <button class="send-email" type="submit">Send</button>
           </div>
         </form>
       </div>
