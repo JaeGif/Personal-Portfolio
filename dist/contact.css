@@ -84,7 +84,7 @@ label {
   transition: transform 1s ease;
 }
 .contact-slide:hover .chevron {
-  transform: translateX(50px);
+  transform: translateX(10vw);
 }
 .contact-slide:hover .in-touch-wrapper {
   transform: scale(103%);
@@ -103,5 +103,5 @@ label {
   transition: transform 1s ease-in-out;
 }
 .justify-center-div:hover .mail {
-  transform: translateX(75px);
+  transform: translateX(9vw);
 }
