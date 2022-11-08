@@ -45,6 +45,7 @@ function projectSectionFocused() {
   const body = document.body;
   const descriptionCard = document.getElementsByClassName('description-card');
   const navBar = document.getElementById('nav-container');
+  const progressBar = document.getElementById('progress-container');
 
   const projectEntireArea =
     document.getElementsByClassName('heading-section')[0];
@@ -55,9 +56,11 @@ function projectSectionFocused() {
     body.classList.add('in-focus');
     navBar.classList.remove('uncolorNav');
     transformContactSectionBack();
+    progressBar.style.display = 'flex';
   } else {
     body.classList.remove('in-focus');
     navBar.classList.add('uncolorNav');
+    progressBar.style.display = 'none';
   }
 }
 function transformContactSectionBack() {
