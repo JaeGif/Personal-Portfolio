@@ -147,6 +147,12 @@ button > img {
 #weather-accent {
   border: 1px solid rgb(80, 80, 80);
 }
+#jaeri-accent {
+  border: 1px solid #ffff00;
+}
+#etch-a-sketch-accent {
+  border: 1px solid purple;
+}
 .project-name {
   position: absolute;
   top: -45px;

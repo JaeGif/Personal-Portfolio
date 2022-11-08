@@ -5,7 +5,7 @@ function projectParallax() {
     'under-image-outline'
   );
   const descriptionCardVelocity = 0.25;
-  const accentVelocity = 0.05;
+  const accentVelocity = 0.055;
   const projectEntireArea =
     document.getElementsByClassName('heading-section')[0];
 
@@ -16,7 +16,7 @@ function projectParallax() {
     for (let i = 0; i < projectCard.length; i++) {
       if (isElementInViewport(projectCard[i])) {
         const initialDescriptionCardPosition = -200 - windowHeight * 0.2 * i;
-        const initialUnderImageAccentPosition = -50 - i * 25;
+        const initialUnderImageAccentPosition = -50 - i * 29;
         underImageAccent[i].style.top =
           initialUnderImageAccentPosition + scrollY * accentVelocity + 'px';
         descriptionCard[i].style.bottom =
