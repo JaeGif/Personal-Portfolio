@@ -60,7 +60,6 @@ function projectSectionFocused() {
   } else {
     body.classList.remove('in-focus');
     navBar.classList.add('uncolorNav');
-    progressBar.style.display = 'none';
   }
 }
 function transformContactSectionBack() {

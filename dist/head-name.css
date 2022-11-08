@@ -57,5 +57,15 @@ a:link {
   width: 100vw;
   height: 5px;
   background-color: white;
-  border-top: 1px solid black;
+  border-top: 1px solid rgb(0, 0, 0);
+}
+
+#fill-bar {
+  background-color: rgb(255, 66, 98);
+  transition: background-color 0.5s ease;
+  border-radius: 0 10px 10px 0px;
+}
+#fill-bar.finished {
+  background-color: rgb(0, 128, 0);
+  border-radius: 0;
 }
