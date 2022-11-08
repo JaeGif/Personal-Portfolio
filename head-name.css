@@ -50,14 +50,14 @@ a:link {
   top: 0;
   width: 100vw;
 
-  box-shadow: rgb(24, 24, 24) 1px 20px 50px;
+  box-shadow: var(--main-dark-theme) 1px 20px 50px;
   transition: box-shadow 0.5s ease;
 }
 .uncolorNav {
   box-shadow: none;
 }
 .navHighlight {
-  background-color: rgb(238, 238, 238);
+  background-color: var(--off-white-transition-color);
 }
 #progress-container {
   display: none;

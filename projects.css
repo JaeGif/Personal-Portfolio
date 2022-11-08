@@ -17,7 +17,7 @@
   font-size: 72px;
 }
 .in-focus {
-  background-color: rgb(24, 24, 24);
+  background-color: var(--main-dark-theme);
   color: white;
 }
 
@@ -69,7 +69,7 @@
   box-shadow: rgb(20, 20, 20) 5px 5px 10px;
 }
 .description-in-focus {
-  background-color: rgb(238, 238, 238);
+  background-color: var(--off-white-transition-color);
 }
 .tech-icons-container > img {
   height: 50px;
@@ -103,7 +103,7 @@
 }
 
 .tech-stack-wrapper {
-  border-bottom: solid rgb(24, 24, 24) 2px;
+  border-bottom: solid var(--main-dark-theme) 2px;
   width: 100%;
   display: flex;
   justify-content: center;
