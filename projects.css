@@ -148,3 +148,19 @@ button > img {
 #weather-accent {
   background-color: rgb(80, 80, 80);
 }
+.project-name {
+  position: absolute;
+  top: -30px;
+  left: 50px;
+  height: 19px;
+  z-index: -1;
+  background-color: rgb(144, 0, 41);
+  text-align: center;
+  color: white;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-radius: 5px 5px 0px 0px;
+  padding: 5px;
+  font-size: 1rem;
+}
