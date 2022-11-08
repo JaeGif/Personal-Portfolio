@@ -56,6 +56,9 @@ a:link {
 .uncolorNav {
   box-shadow: none;
 }
+.navHighlight {
+  background-color: rgb(238, 238, 238);
+}
 #progress-container {
   display: none;
   width: 100vw;

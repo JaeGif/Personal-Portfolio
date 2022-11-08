@@ -46,7 +46,6 @@ function projectSectionFocused() {
   const descriptionCard = document.getElementsByClassName('description-card');
   const navBar = document.getElementById('nav-container');
   const progressBar = document.getElementById('progress-container');
-
   const projectEntireArea =
     document.getElementsByClassName('heading-section')[0];
   if (isProjectInViewport(projectEntireArea)) {
@@ -55,11 +54,13 @@ function projectSectionFocused() {
     }
     body.classList.add('in-focus');
     navBar.classList.remove('uncolorNav');
+    navBar.classList.add('nav-highlight');
     transformContactSectionBack();
     progressBar.style.display = 'flex';
   } else {
     body.classList.remove('in-focus');
     navBar.classList.add('uncolorNav');
+    navBar.classList.remove('nav-highlight');
   }
 }
 function transformContactSectionBack() {
