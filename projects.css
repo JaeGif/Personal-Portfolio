@@ -33,7 +33,6 @@
   border: 2px solid rgb(216, 216, 216);
   width: 575px;
   height: 375px;
-  border-radius: 5px;
   background-repeat: no-repeat;
   background-size: cover;
   transition: transform 1s ease;
@@ -47,7 +46,6 @@
   align-items: flex-start;
   width: 550px;
   height: 350px;
-  border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -98,6 +96,7 @@
 .under-image-outline {
   width: 575px;
   height: 375px;
+
   position: absolute;
   left: 20px;
   z-index: -1;
@@ -140,19 +139,19 @@ button > img {
   align-items: center;
 }
 #battleship-accent {
-  background-color: rgb(0, 225, 225);
+  border: 1px solid rgb(0, 225, 225);
 }
 #shopping-cart-accent {
-  background-color: rgb(255, 103, 128);
+  border: 1px solid rgb(255, 103, 128);
 }
 #weather-accent {
-  background-color: rgb(80, 80, 80);
+  border: 1px solid rgb(80, 80, 80);
 }
 .project-name {
   position: absolute;
-  top: -30px;
+  top: -45px;
   left: 50px;
-  height: 19px;
+  height: 24px;
   z-index: -1;
   background-color: rgb(144, 0, 41);
   text-align: center;
@@ -160,7 +159,6 @@ button > img {
   border-top: 1px solid black;
   border-left: 1px solid black;
   border-right: 1px solid black;
-  border-radius: 5px 5px 0px 0px;
-  padding: 5px;
-  font-size: 1rem;
+  padding: 10px;
+  font-size: 1.5rem;
 }
