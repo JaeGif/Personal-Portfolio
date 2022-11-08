@@ -8,7 +8,6 @@ function fillProgressBar() {
     let currentYPosition = window.scrollY;
     let currentScrollPercent =
       (currentYPosition / (pageHeight - window.innerHeight)) * 100;
-    console.log(currentScrollPercent);
 
     fillBar.style.width = currentScrollPercent + 'vw';
     if (isNavAtTop(navEl)) {

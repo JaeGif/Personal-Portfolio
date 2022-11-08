@@ -1,6 +1,6 @@
 function stickNav() {
   const navContainer = document.getElementById('nav-container');
-  const margin = -200;
+  const margin = -200; // margin to the top of the page from the nav
   window.addEventListener('scroll', () => {
     if (window.innerHeight + margin <= window.scrollY) {
       navContainer.classList.add('stuckTop');
@@ -9,6 +9,7 @@ function stickNav() {
     }
   });
 }
+
 function navPageScroll() {
   const projectBtn = document.getElementById('project-nav');
   const contactBtn = document.getElementById('contact-nav');
