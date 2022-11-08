@@ -22,7 +22,11 @@
 }
 
 .positional-wrapper {
-  width: 1130px;
+  width: 100vw;
+  border: solid red 1px;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 7.5vw;
 }
 
 .project-card {
@@ -45,7 +49,7 @@
   left: 95%;
   align-items: flex-start;
   width: 550px;
-  height: 350px;
+  min-height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -63,6 +67,7 @@
 .reverseWrapper {
   display: flex;
   justify-content: flex-end;
+  margin-right: 4.25vw;
 }
 
 .description-card.reverse {
@@ -167,4 +172,27 @@ button > img {
   border-right: 1px solid black;
   padding: 10px;
   font-size: 1.5rem;
+}
+
+@media (min-width: 1450px) {
+}
+
+@media (max-width: 1200px) {
+  .positional-wrapper {
+    margin-left: 5.5vw;
+    width: 90vw;
+  }
+  .reverseWrapper {
+    margin-right: 5.5vw;
+    width: 90vw;
+  }
+  .description-card {
+    left: 75%;
+  }
+  .reverse {
+    left: -75%;
+  }
+}
+
+@media (max-width: 895px) {
 }
