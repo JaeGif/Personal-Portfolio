@@ -26,6 +26,7 @@
   justify-content: space-between;
   text-align: center;
   width: 40vw;
+  min-width: 350px;
 }
 .send-email {
   background: none;
@@ -36,14 +37,13 @@
 }
 input {
   min-width: 250px;
-
   width: 30vw;
   height: 1.5rem;
 }
 textarea {
   min-width: 250px;
   width: 30vw;
-  height: 15.5rem;
+  height: 20.5rem;
   resize: vertical;
   min-height: 2rem;
   max-height: 20rem;
