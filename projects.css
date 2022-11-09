@@ -1,8 +1,16 @@
+:root {
+  --project-img-width: 42.5vw;
+  --project-img-height: 25.5vw;
+  --project-description-height: 25.5vw;
+  --project-description-width: 42.5vw;
+  --project-offset: calc(0.95 * var(--project-img-width));
+}
+
 .projects-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 75vh;
   width: 100vw;
 }
 .heading-section {
@@ -22,11 +30,15 @@
 }
 
 .positional-wrapper {
-  width: 100vw;
+  width: calc(
+    var(--project-img-width) +
+      calc(
+        var(--project-description-width) - calc(var(--project-img-width) * 0.05)
+      )
+  );
   border: solid red 1px;
   display: flex;
   justify-content: flex-start;
-  margin-left: 7.5vw;
 }
 
 .project-card {
@@ -35,8 +47,8 @@
   justify-content: center;
   align-items: center;
   border: 2px solid rgb(216, 216, 216);
-  width: 575px;
-  height: 375px;
+  width: var(--project-img-width);
+  height: var(--project-img-height);
   background-repeat: no-repeat;
   background-size: cover;
   transition: transform 1s ease;
@@ -46,10 +58,10 @@
   z-index: 3;
   bottom: -100px;
   box-shadow: rgb(20, 20, 20) -5px 5px 10px;
-  left: 95%;
+  left: var(--project-offset);
   align-items: flex-start;
-  width: 550px;
-  min-height: 350px;
+  width: var(--project-description-width);
+  min-height: var(--project-description-height);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -61,13 +73,12 @@
   transition: background-color 1s ease;
 }
 .reverse {
-  left: -95%;
+  left: calc(-1 * var(--project-offset));
   display: flex;
 }
 .reverseWrapper {
   display: flex;
   justify-content: flex-end;
-  margin-right: 4.25vw;
 }
 
 .description-card.reverse {
@@ -174,25 +185,5 @@ button > img {
   font-size: 1.5rem;
 }
 
-@media (min-width: 1450px) {
-}
-
-@media (max-width: 1200px) {
-  .positional-wrapper {
-    margin-left: 5.5vw;
-    width: 90vw;
-  }
-  .reverseWrapper {
-    margin-right: 5.5vw;
-    width: 90vw;
-  }
-  .description-card {
-    left: 75%;
-  }
-  .reverse {
-    left: -75%;
-  }
-}
-
-@media (max-width: 895px) {
+@media (max-width: 920px) {
 }
