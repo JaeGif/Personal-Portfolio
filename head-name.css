@@ -10,16 +10,16 @@
 .name-h1 {
   font-size: 8vw;
 }
-nav > a {
+.nav-item {
   cursor: pointer;
   text-decoration: none;
   font-size: 3vw;
   margin-left: 5vw;
   margin-right: 5vw;
+  transition: transform 0.25s ease;
 }
-
-a:link {
-  text-decoration: none;
+.nav-item:hover {
+  transform: scale(105%);
 }
 
 .nav-top {
@@ -75,4 +75,34 @@ a:link {
 #fill-bar.finished {
   background-color: rgb(0, 128, 0);
   border-radius: 0;
+}
+#name-title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 75vw;
+}
+#full-header-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+#heading-icons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 10vw;
+  align-items: center;
+
+  height: 100%;
+  padding: 5px;
+}
+.socials {
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+.socials:hover {
+  transform: scale(120%);
 }
