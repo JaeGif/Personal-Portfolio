@@ -16,9 +16,14 @@ function navPageScroll() {
   const resumeBtn = document.getElementById('resume-nav');
 
   projectBtn.addEventListener('click', () => {
-    const projectTitleHeight = 36;
+    const projectTitleWidthVw = -10; // vw
+    if (window.innerWidth <= 1100) {
+      const windowSizeInPx = window.innerWidth;
+    }
+    let pxPerVw = windowSizeInPx / 100;
+    let projectTitleWidthPx = projectTitleWidthVw * pxPerVw;
     window.scroll({
-      top: window.innerHeight + projectTitleHeight,
+      top: window.innerHeight + projectTitleWidthPx,
       behavior: 'smooth',
     });
   });
