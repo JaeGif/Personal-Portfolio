@@ -16,7 +16,7 @@ function parallaxMotionOfAccentAndDescription(index) {
   const underImageAccent = document.getElementsByClassName(
     'under-image-outline'
   );
-  const descriptionCardVelocity = 0.25;
+  const descriptionCardVelocity = 0.27;
   const accentVelocity = 0.055;
   let scrollY = window.scrollY;
   const windowHeight = window.innerHeight;

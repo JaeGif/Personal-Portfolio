@@ -16,11 +16,17 @@ function navPageScroll() {
   const resumeBtn = document.getElementById('resume-nav');
 
   projectBtn.addEventListener('click', () => {
-    const projectTitleWidthVw = -10; // vw
-    const windowSizeInPx = window.innerWidth;
-
+    let windowSizeInPx = window.innerWidth;
+    let projectTitleWidthVw = 0;
+    console.log(windowSizeInPx);
+    if (windowSizeInPx >= 1100) {
+      projectTitleWidthVw = -10; // vw
+    } else if (windowSizeInPx >= 950) {
+      projectTitleWidthVw = -15;
+    }
     let pxPerVw = windowSizeInPx / 100;
     let projectTitleWidthPx = projectTitleWidthVw * pxPerVw;
+
     window.scroll({
       top: window.innerHeight + projectTitleWidthPx,
       behavior: 'smooth',

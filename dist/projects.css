@@ -108,14 +108,14 @@
   z-index: 2;
 }
 .under-image-outline {
-  width: var(--project-description-width);
-  height: var(--project-description-height);
+  width: calc(var(--project-description-width) + 3vw);
+  height: calc(var(--project-description-height) + 1vh);
   position: absolute;
-  left: 5%;
+  left: 10%;
   z-index: -1;
 }
 .under-image-outline.reverse-outline {
-  left: -5%;
+  left: -15%;
 }
 
 .tech-stack-wrapper {
