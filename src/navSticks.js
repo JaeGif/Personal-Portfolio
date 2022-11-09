@@ -17,9 +17,8 @@ function navPageScroll() {
 
   projectBtn.addEventListener('click', () => {
     const projectTitleWidthVw = -10; // vw
-    if (window.innerWidth <= 1100) {
-      const windowSizeInPx = window.innerWidth;
-    }
+    const windowSizeInPx = window.innerWidth;
+
     let pxPerVw = windowSizeInPx / 100;
     let projectTitleWidthPx = projectTitleWidthVw * pxPerVw;
     window.scroll({
