@@ -106,3 +106,8 @@
 .socials:hover {
   transform: scale(120%);
 }
+.upper-svg {
+  position: absolute;
+  top: 0;
+  height: 25vh;
+}
