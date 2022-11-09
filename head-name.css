@@ -8,12 +8,12 @@
   margin-top: -5vh;
 }
 .name-h1 {
-  font-size: 6rem;
+  font-size: 8vw;
 }
 nav > a {
   cursor: pointer;
   text-decoration: none;
-  font-size: 2.5rem;
+  font-size: 4vw;
   margin-left: 5vw;
   margin-right: 5vw;
 }

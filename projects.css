@@ -56,19 +56,19 @@
 .description-card {
   position: absolute;
   z-index: 3;
-  bottom: -100px;
   box-shadow: rgb(20, 20, 20) -5px 5px 10px;
   left: var(--project-offset);
   align-items: flex-start;
   width: var(--project-description-width);
   min-height: var(--project-description-height);
+  max-height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: 1vw;
   background-color: white;
-  padding: 15px;
+  padding: 1rem;
   color: black;
   transition: background-color 1s ease;
 }
@@ -185,5 +185,5 @@ button > img {
   font-size: 1.5rem;
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1100px) {
 }
