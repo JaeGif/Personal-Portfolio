@@ -7,13 +7,13 @@
 }
 .contact-inner-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   gap: 10px;
 }
 .form-wrapper {
-  min-width: 100vw;
+  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -25,7 +25,7 @@
   display: flex;
   justify-content: space-between;
   text-align: center;
-  width: 400px;
+  width: 40vw;
 }
 .send-email {
   background: none;
@@ -35,12 +35,15 @@
   transition: transform 0.25s ease;
 }
 input {
-  width: 300px;
+  min-width: 250px;
+
+  width: 30vw;
   height: 1.5rem;
 }
 textarea {
-  width: 300px;
-  height: 10.5rem;
+  min-width: 250px;
+  width: 30vw;
+  height: 15.5rem;
   resize: vertical;
   min-height: 2rem;
   max-height: 20rem;
@@ -68,7 +71,7 @@ label {
   transform: translateX(-50vw);
 }
 .showSlide {
-  transform: translateX(55vw);
+  transform: translateX(25vw);
 }
 .larger-text {
   font-size: 4rem;
