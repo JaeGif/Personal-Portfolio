@@ -12,7 +12,6 @@ function transformPageLeft() {
   const contactForm = document.getElementsByClassName('form-wrapper')[0];
 
   contactCallToAction.classList.add('hidden');
-  contactCallToAction.classList.remove('showSlide');
   contactForm.classList.add('show');
   contactForm.classList.remove('hidden');
 }
