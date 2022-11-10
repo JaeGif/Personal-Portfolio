@@ -4,9 +4,10 @@ import projectParallax from './parallaxProjects.js';
 import fillProgressBar from './progressBar.js';
 import { typewriter } from './typing.js';
 
+projectParallax();
+
 typewriter();
 navPageScroll();
-projectParallax();
 stickNav();
 contactSlide();
 fillProgressBar();

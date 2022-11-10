@@ -3,9 +3,12 @@ function projectParallax() {
 
   window.addEventListener('scroll', () => {
     projectSectionFocused();
-    for (let i = 0; i < projectCard.length; i++) {
-      if (isElementInViewport(projectCard[i])) {
-        parallaxMotionOfAccentAndDescription(i);
+    let windowSizeInPx = window.innerWidth;
+    if (windowSizeInPx >= 750) {
+      for (let i = 0; i < projectCard.length; i++) {
+        if (isElementInViewport(projectCard[i])) {
+          parallaxMotionOfAccentAndDescription(i);
+        }
       }
     }
   });
