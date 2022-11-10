@@ -18,6 +18,7 @@
   margin-right: 5vw;
   transition: transform 0.25s ease;
 }
+
 .nav-item:hover {
   transform: scale(105%);
 }
@@ -104,7 +105,7 @@
 }
 .logo:hover,
 .socials:hover {
-  transform: scale(120%);
+  transform: scale(110%);
 }
 .upper-svg {
   position: absolute;
@@ -134,4 +135,7 @@ a:link {
 }
 a:visited {
   text-decoration: none;
+}
+
+@media (max-width: 900px) {
 }

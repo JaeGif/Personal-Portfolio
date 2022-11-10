@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  min-width: 100vw;
+  min-width: 200vw;
 }
 .contact-inner-container {
   display: flex;
@@ -53,9 +53,8 @@ form:hover .yellow {
   background-color: rgba(0, 255, 229, 0.5);
 }
 .form-wrapper {
-  min-width: 100vw;
+  width: 100vw;
   margin-bottom: -10vh;
-  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,7 +69,6 @@ form:hover .yellow {
   text-align: center;
   width: 30vw;
 }
-
 .send-email {
   background: none;
   color: black;
@@ -79,7 +77,7 @@ form:hover .yellow {
   transition: transform 0.25s ease;
 }
 input {
-  min-width: 250px;
+  min-width: 350px;
   width: 30vw;
   height: 2rem;
   font-size: 1.5rem;
@@ -90,7 +88,7 @@ input {
 }
 textarea {
   font-size: 1.5rem;
-  min-width: 250px;
+  min-width: 350px;
   width: 30vw;
   height: 20.5rem;
   resize: vertical;
@@ -112,20 +110,18 @@ label {
 .contact-outer-wrapper {
   display: flex;
   justify-content: center;
-  align-items: space-evenly;
+  align-items: center;
   transition: transform 1s ease-in-out;
-  min-width: 100vw;
+  width: 100vw;
   z-index: 1;
 }
 .hidden {
-  transform: translateX(150vw);
+  transform: translateX(100vw);
 }
 .show {
-  transform: translateX(-50vw);
+  transform: translateX(-100vw);
 }
-.showSlide {
-  transform: translateX(50vw);
-}
+
 .larger-text {
   font-size: 4rem;
 }
@@ -164,4 +160,6 @@ label {
 }
 .justify-center-div:hover .mail {
   transform: translateX(9vw);
+}
+@media (max-width: 900px) {
 }
