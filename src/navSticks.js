@@ -17,7 +17,11 @@ function navPageScroll() {
   const projectBtn = document.getElementById('project-nav');
   const contactBtn = document.getElementById('contact-nav');
   const resumeBtn = document.getElementById('resume-nav');
+  const logoHomeBtn = document.getElementsByClassName('logo')[0];
 
+  logoHomeBtn.addEventListener('click', () => {
+    scrollToTop();
+  });
   projectBtn.addEventListener('click', () => {
     let windowSizeInPx = window.innerWidth;
     let projectTitleWidthVw = 0;
@@ -37,16 +41,22 @@ function navPageScroll() {
     });
   });
   contactBtn.addEventListener('click', () => {
-    scrollAndShift();
+    scrollToContact();
   });
   resumeBtn.addEventListener('click', () => {
     console.log('resume download');
   });
 }
 
-function scrollAndShift() {
+function scrollToContact() {
   window.scroll({
     top: document.body.scrollHeight,
+    behavior: 'smooth',
+  });
+}
+function scrollToTop() {
+  window.scroll({
+    top: 0,
     behavior: 'smooth',
   });
 }
