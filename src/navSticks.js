@@ -1,11 +1,14 @@
 function stickNav() {
   const navContainer = document.getElementById('nav-container');
   const margin = -200; // margin to the top of the page from the nav
+  const homeLogo = document.getElementsByClassName('logo')[0];
   window.addEventListener('scroll', () => {
     if (window.innerHeight + margin <= window.scrollY) {
       navContainer.classList.add('stuckTop');
+      homeLogo.classList.add('show-logo');
     } else {
       navContainer.classList.remove('stuckTop');
+      homeLogo.classList.remove('show-logo');
     }
   });
 }
