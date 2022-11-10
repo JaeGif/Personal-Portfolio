@@ -160,5 +160,57 @@ label {
 .justify-center-div:hover .mail {
   transform: translateX(9vw);
 }
-@media (max-width: 900px) {
+@media (max-width: 750px) {
+  .larger-text {
+    font-size: 3rem;
+  }
+  .large-text {
+    font-size: 2rem;
+  }
+
+  .chevron {
+    height: 10rem;
+  }
+  .show {
+    transform: translateX(-110vw);
+  }
+}
+@media (max-width: 750px) {
+  .larger-text {
+    font-size: 3rem;
+  }
+  .large-text {
+    font-size: 2rem;
+  }
+
+  .chevron {
+    height: 10rem;
+  }
+  .show {
+    transform: translateX(-110vw);
+  }
+}
+@media (max-width: 500px) {
+  .larger-text {
+    font-size: 2rem;
+  }
+  .large-text {
+    font-size: 1.5rem;
+  }
+
+  .chevron {
+    height: 7.5rem;
+  }
+  .show {
+    transform: translateX(-100vw);
+  }
+  .label-input-wrapper {
+    min-width: 250px;
+  }
+  input {
+    min-width: 250px;
+  }
+  textarea {
+    min-width: 250px;
+  }
 }
