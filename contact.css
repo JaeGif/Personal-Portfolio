@@ -121,7 +121,6 @@ label {
 .show {
   transform: translateX(-100vw);
 }
-
 .larger-text {
   font-size: 4rem;
 }

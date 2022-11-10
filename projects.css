@@ -28,7 +28,6 @@
   background-color: var(--main-dark-theme);
   color: white;
 }
-
 .positional-wrapper {
   width: calc(
     var(--project-img-width) +
@@ -39,7 +38,6 @@
   display: flex;
   justify-content: flex-start;
 }
-
 .project-card {
   position: relative;
   display: flex;
@@ -48,8 +46,6 @@
   border: 2px solid rgb(216, 216, 216);
   width: var(--project-img-width);
   height: var(--project-img-height);
-  background-repeat: no-repeat;
-  background-size: cover;
   transition: transform 1s ease;
 }
 .description-card {
@@ -78,7 +74,6 @@
   display: flex;
   justify-content: flex-end;
 }
-
 .description-card.reverse {
   box-shadow: rgb(20, 20, 20) 5px 5px 10px;
 }
@@ -185,6 +180,53 @@ button > img {
   padding: 10px;
   font-size: 1.5rem;
 }
-
-@media (max-width: 1100px) {
+.mobile-project-asset {
+  width: 100%;
+  border: solid 1px black;
+  margin-top: 10px;
+}
+.under-750 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: stretch;
+}
+@media (max-width: 750px) {
+  .project-asset,
+  .under-image-outline {
+    display: none;
+  }
+  .project-card {
+    border: none;
+    width: 100vw;
+  }
+  .description-card,
+  .description-card.reverse {
+    position: relative;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+  .description-card {
+    left: -25vw;
+  }
+  .description-card.reverse {
+    left: 25vw;
+  }
+  .reverse {
+    left: 100;
+  }
+  .reverseWrapper,
+  .positional-wrapper {
+    justify-content: center;
+    width: 100vw;
+  }
+  .full-size {
+    display: none;
+  }
+  #projects-header {
+    display: none;
+  }
 }
