@@ -18,7 +18,7 @@
 }
 .circle-contact {
   position: absolute;
-
+  transition: 1s background-color linear;
   border-radius: 50%;
   z-index: -1;
 }
@@ -28,12 +28,18 @@
   height: 50vh;
   width: 50vh;
 }
+.blue:hover {
+  background-color: rgba(0, 128, 0, 0.5);
+}
 .pink {
   background-color: rgba(222, 129, 213, 0.45);
   left: -10vw;
   bottom: 0;
   height: 40vh;
   width: 40vh;
+}
+.pink:hover {
+  background-color: rgba(128, 0, 119, 0.5);
 }
 .yellow {
   background-color: rgba(255, 255, 0, 0.45);
@@ -42,6 +48,9 @@
   height: 60vh;
   width: 60vh;
   z-index: -2;
+}
+form:hover .yellow {
+  background-color: rgba(0, 255, 229, 0.5);
 }
 .form-wrapper {
   min-width: 100vw;
