@@ -99,7 +99,8 @@
   padding: 5px;
 }
 .socials {
-  height: 50px;
+  height: 6vw;
+  min-height: 40px;
   cursor: pointer;
   transition: transform 0.25s ease;
 }
@@ -113,10 +114,10 @@
   height: 25vh;
 }
 .logo {
-  height: 5vh;
-  width: 7.5vh;
-  margin-left: -10vw;
-  margin-right: 8vw;
+  height: 6vw;
+  width: 8.5vw;
+  margin-left: -5vw;
+  margin-right: 5vw;
   transition: opacity 0.25s ease-in-out, transform 0.25s ease;
   cursor: pointer;
   visibility: hidden;
@@ -136,6 +137,49 @@ a:link {
 a:visited {
   text-decoration: none;
 }
+.under-500 {
+  display: none;
+}
+.under-250 {
+  display: none;
+}
 
-@media (max-width: 900px) {
+@media (max-width: 750px) {
+  .nav-item {
+    font-size: 4vw;
+  }
+}
+@media (max-width: 500px) {
+  #heading-icons-container {
+    display: none;
+  }
+  .under-500 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .nav-item {
+    font-size: 6vw;
+  }
+  .logo {
+    display: none;
+  }
+}
+@media (max-width: 350px) {
+  .name {
+    font-size: 12.5vw;
+  }
+  .under-350 {
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 150px;
+  }
+  .under-500 {
+    display: none;
+  }
 }
