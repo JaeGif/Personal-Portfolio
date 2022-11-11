@@ -21,11 +21,15 @@ function navPageScroll() {
   const contactBtn = document.getElementById('contact-nav');
   const resumeBtn = document.getElementById('resume-nav');
   const logoHomeBtn = document.getElementsByClassName('logo')[0];
+  const nav = document.getElementById('nav-container');
 
   logoHomeBtn.addEventListener('click', () => {
     scrollToTop();
   });
   projectBtn.addEventListener('click', () => {
+    if (nav.classList.contains('show-mobile')) {
+      nav.classList.remove('show-mobile');
+    }
     let windowSizeInPx = window.innerWidth;
     let projectTitleWidthVw = 0;
     console.log(windowSizeInPx);
@@ -37,6 +41,10 @@ function navPageScroll() {
       projectTitleWidthVw = -20;
     } else if (windowSizeInPx >= 550) {
       projectTitleWidthVw = -25;
+    } else if (windowSizeInPx >= 350) {
+      projectTitleWidthVw = -30;
+    } else {
+      projectTitleWidthVw = -32.5;
     }
 
     let pxPerVw = windowSizeInPx / 100;
@@ -48,6 +56,9 @@ function navPageScroll() {
     });
   });
   contactBtn.addEventListener('click', () => {
+    if (nav.classList.contains('show-mobile')) {
+      nav.classList.remove('show-mobile');
+    }
     scrollToContact();
   });
   resumeBtn.addEventListener('click', () => {

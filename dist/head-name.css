@@ -179,25 +179,11 @@ a:visited {
   }
 }
 @media (max-width: 500px) {
-  #heading-icons-container {
-    display: none;
-  }
-  .under-500 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-  }
-  .nav-item {
-    font-size: 6vw;
-  }
   .logo {
     display: none;
   }
-}
-@media (max-width: 350px) {
-  .name {
-    font-size: 12.5vw;
+  #heading-icons-container {
+    display: none;
   }
   .under-350 {
     position: fixed;
@@ -238,5 +224,10 @@ a:visited {
   }
   .nav-item {
     font-size: 10vw;
+  }
+}
+@media (max-width: 350px) {
+  .name {
+    font-size: 12.5vw;
   }
 }
