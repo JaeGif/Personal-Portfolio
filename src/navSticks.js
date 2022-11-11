@@ -32,6 +32,8 @@ function navPageScroll() {
       projectTitleWidthVw = -15;
     } else if (windowSizeInPx >= 750) {
       projectTitleWidthVw = -20;
+    } else if (windowSizeInPx >= 550) {
+      projectTitleWidthVw = -25;
     }
 
     let pxPerVw = windowSizeInPx / 100;

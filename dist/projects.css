@@ -205,16 +205,16 @@ button > img {
   .description-card.reverse {
     position: relative;
     top: 0;
-    width: 100vw;
+    min-width: 275px;
     display: flex;
     flex-direction: column;
     height: fit-content;
   }
   .description-card {
-    left: -25vw;
+    left: 0px;
   }
   .description-card.reverse {
-    left: 25vw;
+    left: 0px;
   }
   .reverse {
     left: 100;
@@ -238,5 +238,8 @@ button > img {
   }
   .tech-icons-container > img {
     height: 40px;
+  }
+  .image-wrapper {
+    display: none;
   }
 }

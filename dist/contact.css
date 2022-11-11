@@ -214,3 +214,16 @@ label {
     min-width: 250px;
   }
 }
+@media (max-width: 350px) {
+  .larger-text {
+    font-size: 1.5rem;
+  }
+  .large-text {
+    font-size: 1.25rem;
+  }
+}
+@media (max-height: 600px) {
+  textarea {
+    height: 10rem;
+  }
+}
