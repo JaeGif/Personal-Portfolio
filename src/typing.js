@@ -10,7 +10,6 @@ function typewriter() {
   const title = document.getElementsByClassName('name-h1')[1];
 
   title.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + '_';
-  console.log(sContents);
   if (iTextPos++ == iArrLength) {
     iTextPos = 0;
     iIndex++;

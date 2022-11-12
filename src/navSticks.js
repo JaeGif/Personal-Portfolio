@@ -32,7 +32,6 @@ function navPageScroll() {
     }
     let windowSizeInPx = window.innerWidth;
     let projectTitleWidthVw = 0;
-    console.log(windowSizeInPx);
     if (windowSizeInPx >= 1100) {
       projectTitleWidthVw = -10; // vw
     } else if (windowSizeInPx >= 950) {
@@ -60,9 +59,6 @@ function navPageScroll() {
       nav.classList.remove('show-mobile');
     }
     scrollToContact();
-  });
-  resumeBtn.addEventListener('click', () => {
-    console.log('resume download');
   });
 }
 
