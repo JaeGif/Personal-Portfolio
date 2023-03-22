@@ -2,7 +2,6 @@
   --main-dark-theme: rgb(24, 24, 24);
   --off-white-transition-color: rgb(238, 238, 238);
 }
-
 @font-face {
   font-family: 'Quicksand';
   src: local('Quicksand') url('./fonts/Quicksand.ttf');
