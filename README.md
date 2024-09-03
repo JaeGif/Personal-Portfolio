@@ -1,3 +1,4 @@
-# Design Note
+This is my first portfolio iteration and is since outdated.
 
-The design for this portfolio is inspired by an open source front-end portfolio by Sebastian Graf and can be found here <https://seb-graf.com/>. However, the build of the website including CSS, HTML, and JS is entirely my own.
+The design for this portfolio is inspired by Sebastian Graf.
+
